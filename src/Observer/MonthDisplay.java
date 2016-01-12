@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PRC7.Observer;
+package Observer;
 
-import PRC7.Observable.MonthData;
+import Observable.MonthData;
 import java.util.Observable;
 import java.util.Observer;
 

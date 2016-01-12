@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PRC7.Observer;
+package Observer;
 
-import PRC7.Observable.PlaceData;
+import Observable.YearData;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -13,18 +13,18 @@ import java.util.Observer;
  *
  * @author Sergio
  */
-public class PlaceDisplay implements Observer{
+public class YearDisplay implements Observer{
 
-    PlaceData placeobs = new PlaceData();
+    YearData yearobs = new YearData();
     @Override
     public void update(Observable o, Object arg) {
-        placeobs = (PlaceData) o;
+        yearobs = (YearData) o;
         display();
     }
     public void display()
     {
-        //placeobs.getYeardata();
-        System.out.println("Lugar: "+placeobs.getdata());
+        //yearobs.getYeardata();
+        System.out.println("Año: "+yearobs.getYeardata());
     }
     
 }

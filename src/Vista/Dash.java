@@ -6,24 +6,25 @@
 
 // VER JAVA LISTENER
 
-package PRC7;
+package Vista;
 
+import Modelo.Dataset;
 import Controlador.Controlador;
 import Calculos.Calculos;
-import PRC7.Componentes.MedidorAF;
-import PRC7.Componentes.MedidorLLuvia;
-import PRC7.Componentes.MedidorSOL;
-import PRC7.Componentes.TermometroMax;
-import PRC7.Componentes.TermometroMin;
-import PRC7.Observable.GraphicData;
-import PRC7.Observable.MonthData;
-import PRC7.Observable.PlaceData;
-import PRC7.Observable.TypeData;
-import PRC7.Observable.YearData;
-import PRC7.Observer.MonthDisplay;
-import PRC7.Observer.PlaceDisplay;
-import PRC7.Observer.TypeDisplay;
-import PRC7.Observer.YearDisplay;
+import Componentes.MedidorAF;
+import Componentes.MedidorLLuvia;
+import Componentes.MedidorSOL;
+import Componentes.TermometroMax;
+import Componentes.TermometroMin;
+import Observable.GraphicData;
+import Observable.MonthData;
+import Observable.PlaceData;
+import Observable.TypeData;
+import Observable.YearData;
+import Observer.MonthDisplay;
+import Observer.PlaceDisplay;
+import Observer.TypeDisplay;
+import Observer.YearDisplay;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.util.Observable;
@@ -437,11 +438,8 @@ public class Dash extends javax.swing.JFrame implements Observer{
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CrearData1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(128, 128, 128))
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CrearData1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(Place, javax.swing.GroupLayout.Alignment.LEADING, 0, 149, Short.MAX_VALUE)
@@ -456,11 +454,11 @@ public class Dash extends javax.swing.JFrame implements Observer{
                                         .addComponent(MonthGrowth))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(33, 33, 33)))
-                                .addGap(18, 18, 18))))
+                                        .addGap(33, 33, 33))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(60, 60, 60)
                         .addComponent(jLabel10)))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))

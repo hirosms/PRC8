@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PRC7.Observable;
+package Observable;
 
 import java.util.Observable;
 
@@ -11,15 +11,15 @@ import java.util.Observable;
  *
  * @author Sergio
  */
-public class YearData extends Observable{
-    private int yeardata;
+public class PlaceData extends Observable{
+    private String placedata;
 
-    public int getYeardata() {
-        return yeardata;
+    public String getdata() {
+        return placedata;
     }
 
-    public void setYeardata(int yeardata) {
-        this.yeardata = yeardata;
+    public void setdata(String placedata) {
+        this.placedata = placedata;
         setChanged();
         notifyObservers();
     }

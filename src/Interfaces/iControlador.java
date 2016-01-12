@@ -5,8 +5,8 @@
  */
 package Interfaces;
 
-import PRC7.Dash;
-import PRC7.Dataset;
+import Vista.Dash;
+import Modelo.Dataset;
 import java.awt.event.ActionEvent;
 import java.util.Observable;
 

@@ -7,11 +7,11 @@ package Controlador;
 
 import Calculos.Calculos;
 import Interfaces.iControlador;
-import PRC7.Dash;
-import PRC7.Dash;
-import PRC7.Dataset;
-import PRC7.Dataset;
-import PRC7.Observable.GraphicData;
+import Vista.Dash;
+import Vista.Dash;
+import Modelo.Dataset;
+import Modelo.Dataset;
+import Observable.GraphicData;
 import java.awt.event.ActionEvent;
 import java.util.Observable;
 

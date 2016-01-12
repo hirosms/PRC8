@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PRC7.Componentes;
+package Componentes;
 
 import Calculos.Calculos;
 import Interfaces.iGraficos;
-import PRC7.Dash;
-import PRC7.Dataset;
+import Vista.Dash;
+import Modelo.Dataset;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import org.jfree.chart.ChartPanel;
