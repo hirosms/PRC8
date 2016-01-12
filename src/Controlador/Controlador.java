@@ -48,7 +48,7 @@ public class Controlador implements iControlador{
         if (e.getSource() == view.getPlace())
         {
             view.getPlacedata().setdata((String)view.getPlace().getSelectedItem());
-            model.crear_dataset(""+view.getPlacedata().getdata());
+            this.SetModel(""+view.getPlacedata().getdata());
 
             for (int i = 0; i < model.getYear().size();i+=12)
             {
