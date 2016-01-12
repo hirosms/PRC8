@@ -130,8 +130,8 @@ public class Dash extends javax.swing.JFrame implements Observer{
         Year.setVisible(false);
         MonthRaise.setVisible(false);
         MonthGrowth.setVisible(false);*/
+        controller.SetModel(Place.getSelectedItem().toString());
         
-        dataset.crear_dataset(Place.getSelectedItem().toString());
         
         //Creamos los Observers
         
@@ -157,9 +157,9 @@ public class Dash extends javax.swing.JFrame implements Observer{
       public int get_m(int n)
     {
         int retorno = -1;
-        for (int i = 0; i < dataset.getYear().size();i++)
+        for (int i = 0; i < controller.getModel().getYear().size();i++)
         {
-            if(n == dataset.getYear().get(i))
+            if(n == controller.getModel().getYear().get(i))
             {
                 retorno = i;
                 break;

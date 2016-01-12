@@ -128,4 +128,16 @@ public class Controlador implements iControlador{
                         }
         }
     }
+
+    @Override
+    public void SetModel(String p) {
+        model.crear_dataset(view.getPlace().getSelectedItem().toString());
+    }
+
+    public Dataset getModel() {
+        return model;
+    }
+    
 }
+
+

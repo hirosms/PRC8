@@ -17,4 +17,5 @@ import java.util.Observable;
 public interface iControlador {
      public void update (Observable o, Object arg);
      public void GetEvent(ActionEvent e);
+     public void SetModel(String p);
 }
